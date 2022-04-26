@@ -8,6 +8,12 @@
       </tr>
   </thead>
   <tbody id="series">
+    <tr *ngFor = "let serie of series">
+      <td> {{serie.id}} </td>
+      <td> <a href="#"> {{serie.name}} </a> </td>
+      <td> {{serie.channel}} </td>
+      <td> {{serie.seasons}} </td>
+    </tr>
   </tbody>
 </table>
-<h6 id="seasonsAvg" class="alineado-izq"></h6>
+<h6 id="seasonsAvg" class="alineado-izq">Seasons average: {{seasonsAverage}}</h6>
